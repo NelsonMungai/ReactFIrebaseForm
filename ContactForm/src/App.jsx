@@ -1,13 +1,12 @@
-import { useState } from 'react'
+import React from 'react'
 import './App.css'
-import HelloWorld from './hello'
-import Contact from './contact'
+import Contact from './components/contact'
 function App() {
 
   return (
-    <>
+    <div className='app'>
     <Contact /> 
-    </>
+    </div>
   )
 }
 
