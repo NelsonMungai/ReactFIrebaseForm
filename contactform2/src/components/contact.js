@@ -25,8 +25,9 @@ const Contact = () => {
         }
         const res= await fetch('https://contactform2-2039c-default-rtdb.firebaseio.com/Messages.json',option)
         console.log(res)
-        if(res){
+        if(res.ok){
             alert("Messages sent successfully")
+            setUserData({Name:"",Email:"",Message:""})
         }
     }
 
